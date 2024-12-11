@@ -4,7 +4,7 @@ import { Poppins } from "next/font/google";
 import Logout from "./Logout";
 
 const poppins = Poppins({
-  weight: "900",
+  weight: "800",
   subsets: ["latin"],
 });
 const poppins1 = Poppins({

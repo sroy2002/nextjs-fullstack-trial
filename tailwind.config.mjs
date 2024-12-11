@@ -12,6 +12,15 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    keyframes: {
+      'small-bounce': {
+        '0%, 100%': { transform: 'translateY(0)' },
+        '50%': { transform: 'translateY(-20px)' }  // Reduced height, default is -25%
+      }
+    },
+    animation: {
+      'small-bounce': 'small-bounce 2s infinite'
+    }
   },
   plugins: [],
 };
