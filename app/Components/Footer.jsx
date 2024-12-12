@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa6";
 const Footer = () => {
   return (
-    <div className="bg-[#78B3CE] h-full">
+    <div className=" text-white h-full">
       <div className="flex items-center justify-between mx-6">
         <p className="text-center my-6">
           @2024 Suranjana Roy. All rights reserved.

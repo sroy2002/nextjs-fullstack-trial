@@ -41,7 +41,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex p-6 justify-between items-center bg-[#78B3CE]">
+    <div className="flex p-6 justify-between items-center ">
       <Link href={"/"} className={`${poppins.className} text-4xl`}>
         sRoy.
       </Link>
