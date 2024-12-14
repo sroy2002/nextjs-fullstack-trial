@@ -1,7 +1,11 @@
+"use client"
 import Link from "next/link";
-import React from "react";
+import React,{useContext} from "react";
 import { Poppins } from "next/font/google";
 import Logout from "./Logout";
+import DarkModeToggle from "./DarkModeToggle";
+import { ThemeContext } from "../context/ThemeContext";
+
 
 const poppins = Poppins({
   weight: "800",
@@ -13,6 +17,8 @@ const poppins1 = Poppins({
 });
 
 const Navbar = () => {
+
+  const { toggle,mode } = useContext(ThemeContext);
   const navItems = [
     {
       id: 1,
@@ -40,13 +46,17 @@ const Navbar = () => {
       url: "/contacts",
     },
   ];
+
+  console.log(mode);
+
   return (
-    <div className="flex p-6 justify-between items-center ">
+    <div className={`flex p-6 justify-between items-center ${mode === "light" ? "text-black" : "text-white"}`}>
       <Link href={"/"} className={`${poppins.className} text-4xl`}>
         sRoy.
       </Link>
       <div className="flex gap-2 items-center">
         <div className="flex items-center">
+          <DarkModeToggle/>
           {navItems.map((item) => (
             <Link
               key={item.id}

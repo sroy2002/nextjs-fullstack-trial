@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import blog1 from "@/public/blog1.jpg";
 import user from "@/public/user.jpeg";
+import ThemeWrapper from "@/app/context/ThemeWrapper";
 const BlogPost = () => {
   return (
-    <div className="mx-8 px-[5rem] py-[1.5rem] text-black">
+    <ThemeWrapper>
+    <div className="mx-8 px-[5rem] py-[1.5rem] ">
       <div className=" flex flex-row-reverse justify-between gap-8">
         <div className="">
           <Image src={blog1} alt={"blog 1"} className="w-[25rem]" />
@@ -31,6 +33,7 @@ const BlogPost = () => {
       </div>
       
     </div>
+    </ThemeWrapper>
   );
 };
 
