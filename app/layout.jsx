@@ -2,8 +2,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import { ThemeProvider } from "./context/ThemeContext";
-import ThemeWrapper from "./context/ThemeWrapper";
+import { ThemeProvider } from "../context/ThemeContext";
+import ThemeWrapper from "./Components/ThemeWrapper";
 
 const poppins = Poppins({
   weight: "400",

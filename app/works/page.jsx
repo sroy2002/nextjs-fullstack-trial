@@ -5,8 +5,8 @@ import application from "@/public/application.jpg";
 import illustration from "@/public/illustration.png";
 import website from "@/public/website.jpg";
 import { Poppins } from "next/font/google";
-import ThemeWrapper from "../context/ThemeWrapper";
-import { ThemeProvider } from "../context/ThemeContext";
+import ThemeWrapper from "../Components/ThemeWrapper";
+import { ThemeProvider } from "../../context/ThemeContext";
 
 const poppins = Poppins({
   weight: "600",

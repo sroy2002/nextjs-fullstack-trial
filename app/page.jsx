@@ -1,7 +1,7 @@
 import Image from "next/image";
 import home from "@/public/home.png";
 import Button from "./Components/Button";
-import ThemeWrapper from "./context/ThemeWrapper";
+import ThemeWrapper from "./Components/ThemeWrapper";
 export default function Home() {
   return (
     <ThemeWrapper>

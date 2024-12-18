@@ -6,7 +6,7 @@ import {
   FaSquareInstagram, // Changed from FaInstagramSquare
   FaSquareYoutube,
 } from "react-icons/fa6";
-import { ThemeContext } from "../context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const Footer = () => {
   const { toggle,mode } = useContext(ThemeContext);

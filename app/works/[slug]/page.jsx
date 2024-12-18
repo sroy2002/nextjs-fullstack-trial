@@ -4,7 +4,7 @@ import portrait1 from "@/public/portrait1.jpg"
 import portrait2 from "@/public/portrait2.jpg"
 import portrait3 from "@/public/portrait3.jpg"
 import Button from "@/app/Components/Button";
-import ThemeWrapper from "@/app/context/ThemeWrapper";
+import ThemeWrapper from "@/app/Components/ThemeWrapper";
 
 
 const Category = async ({ params }) => {

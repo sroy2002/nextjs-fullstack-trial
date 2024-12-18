@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import aboutImage from "@/public/about-pic.jpg";
 import Button from "../Components/Button";
-import ThemeWrapper from "../context/ThemeWrapper";
+import ThemeWrapper from "../Components/ThemeWrapper";
 
 const About = () => {
   return (

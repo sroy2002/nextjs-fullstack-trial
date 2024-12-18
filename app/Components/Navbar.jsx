@@ -4,8 +4,8 @@ import React,{useContext} from "react";
 import { Poppins } from "next/font/google";
 import Logout from "./Logout";
 import DarkModeToggle from "./DarkModeToggle";
-import { ThemeContext } from "../context/ThemeContext";
-
+import { ThemeContext } from "../../context/ThemeContext";
+import ThemeWrapper from "@/app/Components/ThemeWrapper";
 
 const poppins = Poppins({
   weight: "800",
@@ -50,6 +50,7 @@ const Navbar = () => {
   console.log(mode);
 
   return (
+    <ThemeWrapper> 
     <div className={`flex p-6 justify-between items-center ${mode === "light" ? "text-black" : "text-white"}`}>
       <Link href={"/"} className={`${poppins.className} text-4xl`}>
         sRoy.
@@ -70,6 +71,7 @@ const Navbar = () => {
         <Logout />
       </div>
     </div>
+    </ThemeWrapper>
   );
 };
 

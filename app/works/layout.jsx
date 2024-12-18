@@ -1,8 +1,11 @@
 import React from "react";
-import ThemeWrapper from "../context/ThemeWrapper";
+import ThemeWrapper from "../Components/ThemeWrapper";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const layout = ({ children }) => {
   return (
+    <ThemeProvider>
+
     <ThemeWrapper>
     <div>
       <div className="m-8 ">
@@ -11,6 +14,7 @@ const layout = ({ children }) => {
       {children}
     </div>
     </ThemeWrapper>
+    </ThemeProvider>
   );
 };
 
