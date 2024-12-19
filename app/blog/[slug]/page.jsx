@@ -4,17 +4,32 @@ import blog1 from "@/public/blog1.jpg";
 import user from "@/public/user.jpeg";
 import ThemeWrapper from "@/app/Components/ThemeWrapper";
 
-const BlogPost = async ({ params }) => {
-  const slug = (await params).slug;
-  
-  // Fetching data from API
+async function getData(slug){
   const data = await fetch(`http://localhost:3000/api/posts/${slug}`);
   
   if (!data.ok) {
     return <div>Error loading the blog post</div>;
   }
+
+  return data.json();
+}
+
+export async function generateMetadata({ params }) {
+  const slug = (await params).slug;
+  const post = await getData(slug)
+  return {
+    title: post.title,
+    description: post.desc,
+  };
+}
+
+const BlogPost = async ({ params }) => {
+  const slug = (await params).slug;
   
-  const post = await data.json();
+  // Fetching data from API
+  
+  
+  const post = await getData(slug);
 
   return (
     <ThemeWrapper>

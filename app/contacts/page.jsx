@@ -3,6 +3,12 @@ import contact from "@/public/contact.png";
 import Image from "next/image";
 import Button from "../Components/Button";
 import ThemeWrapper from "../Components/ThemeWrapper";
+
+export const metadata = {
+  title: "Contacts",
+  description: "This is the contact page",
+};
+
 const Contacts = () => {
   return (
     <ThemeWrapper>

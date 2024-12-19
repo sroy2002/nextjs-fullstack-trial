@@ -13,6 +13,11 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  title: "Works",
+  description: "This is the work page",
+};
+
 const Works = () => {
   return (
     <ThemeProvider>
