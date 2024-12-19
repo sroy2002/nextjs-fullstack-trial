@@ -39,7 +39,7 @@ const Blog = async () => {
             </div>
           </Link>
           <div>
-            <Link href={`/blog/api/posts/${item._id}`}>
+            <Link href={`/blog/${item._id}`}>
               <h2 className="font-semibold text-xl mb-6">
                 {item.title}
               </h2>
